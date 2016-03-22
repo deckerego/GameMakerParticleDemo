@@ -169,7 +169,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>0</string>
+            <string>0.3</string>
           </argument>
         </arguments>
       </action>
@@ -361,7 +361,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>0</string>
+            <string>0.2</string>
           </argument>
         </arguments>
       </action>
@@ -577,7 +577,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>0</string>
+            <string>15</string>
           </argument>
         </arguments>
       </action>

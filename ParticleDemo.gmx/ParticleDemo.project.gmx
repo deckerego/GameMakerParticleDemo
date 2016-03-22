@@ -12,6 +12,7 @@
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\origin</object>
+    <object>objects\snow</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\showcase</room>
