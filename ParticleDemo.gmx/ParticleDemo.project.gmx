@@ -7,12 +7,21 @@
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\sprite</sprite>
+    <sprite>sprites\slider</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
+  <scripts name="scripts">
+    <script>scripts\shape_name.gml</script>
+  </scripts>
+  <fonts name="fonts">
+    <font>fonts\slider_font</font>
+  </fonts>
   <objects name="objects">
     <object>objects\origin</object>
     <object>objects\snow</object>
+    <object>objects\slider_grav_direction</object>
+    <object>objects\slider_part_shape</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\showcase</room>

@@ -53,6 +53,8 @@
   <instances>
     <instance objName="origin" x="343" y="246" name="inst_580E03BD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="snow" x="320" y="160" name="inst_B96BEA47" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="slider_grav_direction" x="64" y="32" name="inst_5A1D30AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="slider_part_shape" x="64" y="76" name="inst_24BC0035" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
