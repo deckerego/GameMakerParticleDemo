@@ -52,8 +52,8 @@
   </views>
   <instances>
     <instance objName="origin" x="343" y="246" name="inst_580E03BD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="slider_grav_direction" x="64" y="32" name="inst_5A1D30AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="slider_part_shape" x="64" y="114" name="inst_24BC0035" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="slider_grav_direction" x="64" y="75" name="inst_5A1D30AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="slider_part_shape" x="928" y="267" name="inst_24BC0035" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="slider_part_scale" x="64" y="154" name="inst_1C229E53" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="slider_size_wiggle" x="64" y="195" name="inst_2AE38A31" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="slider_speed_wiggle" x="64" y="310" name="inst_29650FC6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -64,7 +64,7 @@
     <instance objName="slider_size_increment" x="63" y="272" name="inst_59A1CA83" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="slider_speed_min" x="64" y="350" name="inst_8997AF49" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="slider_speed_max" x="64" y="387" name="inst_7D1BEC45" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="slider_grav_strength" x="64" y="71" name="inst_2FAFC10E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="slider_grav_strength" x="64" y="114" name="inst_2FAFC10E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="slider_orientation_min" x="64" y="466" name="inst_A4969FE2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="slider_orientation_max" x="63" y="505" name="inst_5C3A34FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="slider_orientation_increment" x="64" y="544" name="inst_CCB5A488" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -74,6 +74,8 @@
     <instance objName="slider_lifespan_max" x="64" y="620" name="inst_BA2862F3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="slider_region_width" x="928" y="192" name="inst_4B066D90" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="slider_region_height" x="928" y="231" name="inst_7AF6D604" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="slider_emit_shape" x="928" y="306" name="inst_DBEF69FD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="slider_emit_dist" x="928" y="342" name="inst_863AA0C7" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
