@@ -14,6 +14,8 @@
   <paths name="paths"/>
   <scripts name="scripts">
     <script>scripts\shape_name.gml</script>
+    <script>scripts\emitter_name.gml</script>
+    <script>scripts\distribution_name.gml</script>
   </scripts>
   <fonts name="fonts">
     <font>fonts\slider_font</font>
@@ -23,6 +25,8 @@
     <objects name="sliders">
       <object>objects\slider_base</object>
       <object>objects\slider_part_shape</object>
+      <object>objects\slider_emit_shape</object>
+      <object>objects\slider_emit_dist</object>
       <object>objects\slider_grav_direction</object>
       <object>objects\slider_grav_strength</object>
       <object>objects\slider_part_scale</object>
