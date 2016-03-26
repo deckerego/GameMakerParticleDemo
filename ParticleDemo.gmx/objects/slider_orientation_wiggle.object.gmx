@@ -29,7 +29,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>5</string>
+            <string>20</string>
           </argument>
         </arguments>
       </action>
@@ -53,7 +53,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>-5</string>
+            <string>-20</string>
           </argument>
         </arguments>
       </action>
@@ -77,7 +77,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>origin.size_wiggle</string>
+            <string>origin.orientation_wiggle</string>
           </argument>
         </arguments>
       </action>
@@ -149,7 +149,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>"Size Wiggle"</string>
+            <string>"Orientation Wiggle"</string>
           </argument>
         </arguments>
       </action>
@@ -192,8 +192,8 @@
           <argument>
             <kind>1</kind>
             <string>with(origin) {
-    self.size_wiggle = other.curr_value;
-    event_perform(ev_other, ev_user2);
+    self.orientation_wiggle = other.curr_value;
+    event_perform(ev_other, ev_user9);
 }
 </string>
           </argument>

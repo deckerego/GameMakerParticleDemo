@@ -26,6 +26,7 @@
       <object>objects\slider_part_scale</object>
       <object>objects\slider_size_wiggle</object>
       <object>objects\slider_speed_wiggle</object>
+      <object>objects\slider_orientation_wiggle</object>
     </objects>
     <objects name="weather">
       <object>objects\snow</object>
