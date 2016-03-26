@@ -24,6 +24,7 @@
       <object>objects\slider_base</object>
       <object>objects\slider_part_shape</object>
       <object>objects\slider_grav_direction</object>
+      <object>objects\slider_grav_strength</object>
       <object>objects\slider_part_scale</object>
       <object>objects\slider_size_wiggle</object>
       <object>objects\slider_size_min</object>
