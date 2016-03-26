@@ -803,6 +803,49 @@ else
         </arguments>
       </action>
     </event>
+    <event eventtype="7" enumb="15">
+      <action>
+        <libid>1</libid>
+        <id>605</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>Particle Speed</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>part_type_speed(self.sparkly_particle, self.speed_min, self.speed_max, self.speed_increment, self.speed_wiggle);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="7" enumb="12">
       <action>
         <libid>1</libid>
@@ -958,7 +1001,7 @@ event_perform(ev_other, ev_user1); // Particle Scale
 event_perform(ev_other, ev_user2); // Particle Size
 part_type_color2(self.sparkly_particle, self.color_one, self.color_two);
 part_type_alpha2(self.sparkly_particle, self.alpha_beginning, self.alpha_end);
-part_type_speed(self.sparkly_particle, self.speed_min, self.speed_max, self.speed_increment, self.speed_wiggle);
+event_perform(ev_other, ev_user5); // Particle Speed
 event_perform(ev_other, ev_user6); // Particle Gravity
 part_type_life(self.sparkly_particle, self.lifespan_min, self.lifespan_max);
 part_type_blend(self.sparkly_particle, self.blend_effect);
