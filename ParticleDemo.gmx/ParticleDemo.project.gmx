@@ -42,6 +42,8 @@
       <object>objects\slider_alpha_end</object>
       <object>objects\slider_color_one</object>
       <object>objects\slider_color_two</object>
+      <object>objects\slider_lifespan_min</object>
+      <object>objects\slider_lifespan_max</object>
       <object>objects\color_sel</object>
     </objects>
     <objects name="weather">
