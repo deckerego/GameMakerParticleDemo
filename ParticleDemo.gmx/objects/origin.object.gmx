@@ -889,6 +889,49 @@ else
         </arguments>
       </action>
     </event>
+    <event eventtype="7" enumb="13">
+      <action>
+        <libid>1</libid>
+        <id>605</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>Particle Color</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>part_type_color2(self.sparkly_particle, self.color_one, self.color_two);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="7" enumb="12">
       <action>
         <libid>1</libid>
@@ -1042,7 +1085,7 @@ self.sparkly_particle = part_type_create();
 event_perform(ev_other, ev_user0); // Particle Shape
 event_perform(ev_other, ev_user1); // Particle Scale
 event_perform(ev_other, ev_user2); // Particle Size
-part_type_color2(self.sparkly_particle, self.color_one, self.color_two);
+event_perform(ev_other, ev_user3); // Particle Color
 part_type_alpha2(self.sparkly_particle, self.alpha_beginning, self.alpha_end);
 event_perform(ev_other, ev_user5); // Particle Speed
 event_perform(ev_other, ev_user6); // Particle Gravity

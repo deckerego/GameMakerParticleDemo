@@ -8,6 +8,7 @@
   <sprites name="sprites">
     <sprite>sprites\sprite</sprite>
     <sprite>sprites\slider</sprite>
+    <sprite>sprites\color_bar</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
@@ -27,6 +28,9 @@
       <object>objects\slider_size_wiggle</object>
       <object>objects\slider_speed_wiggle</object>
       <object>objects\slider_orientation_wiggle</object>
+      <object>objects\slider_color_one</object>
+      <object>objects\slider_color_two</object>
+      <object>objects\color_sel</object>
     </objects>
     <objects name="weather">
       <object>objects\snow</object>
