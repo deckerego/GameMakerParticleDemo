@@ -601,7 +601,31 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>emit_region_size</string>
+            <string>emit_region_width</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>40</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>emit_region_height</string>
           </argument>
           <argument>
             <kind>0</kind>
@@ -724,16 +748,19 @@
           <argument>
             <kind>1</kind>
             <string>var part_direction = 360 - direction;
-var region_size = self.emit_region_size / 2;
+var region_width = self.emit_region_width / 2;
+var region_height = self.emit_region_height / 2;
 
+// Wrap around
 if(self.x &gt; room_width) self.x = 0;
 if(self.x &lt; 0) self.x = room_width;
 if(self.y &gt; room_height) self.y = 0;
 if(self.y &lt; 0) self.y = room_height;
 
+//Invoke the emitter
 part_type_direction(self.sparkly_particle, part_direction, part_direction, 0, 0);
 
-part_emitter_region(self.particle_system, self.particle_emitter, x - region_size, x + region_size, y - region_size, y + region_size, self.emit_shape, self.emit_distribution);
+part_emitter_region(self.particle_system, self.particle_emitter, x - region_width, x + region_width, y - region_height, y + region_height, self.emit_shape, self.emit_distribution);
 
 if(self.stream)
     part_emitter_stream(self.particle_system, self.particle_emitter, self.sparkly_particle, self.emit_per_step);
