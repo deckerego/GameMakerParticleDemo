@@ -35,6 +35,11 @@
       <object>objects\slider_speed_max</object>
       <object>objects\slider_speed_increment</object>
       <object>objects\slider_orientation_wiggle</object>
+      <object>objects\slider_orientation_min</object>
+      <object>objects\slider_orientation_max</object>
+      <object>objects\slider_orientation_increment</object>
+      <object>objects\slider_alpha_begin</object>
+      <object>objects\slider_alpha_end</object>
       <object>objects\slider_color_one</object>
       <object>objects\slider_color_two</object>
       <object>objects\color_sel</object>

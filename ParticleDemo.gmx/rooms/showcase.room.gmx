@@ -65,6 +65,11 @@
     <instance objName="slider_speed_min" x="64" y="350" name="inst_8997AF49" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="slider_speed_max" x="64" y="387" name="inst_7D1BEC45" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="slider_grav_strength" x="64" y="71" name="inst_2FAFC10E" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="slider_orientation_min" x="64" y="466" name="inst_A4969FE2" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="slider_orientation_max" x="63" y="505" name="inst_5C3A34FB" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="slider_orientation_increment" x="64" y="544" name="inst_CCB5A488" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="slider_alpha_begin" x="928" y="113" name="inst_0789DB5A" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="slider_alpha_end" x="928" y="151" name="inst_1167FAA1" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>
