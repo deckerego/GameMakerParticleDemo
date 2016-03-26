@@ -601,7 +601,31 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>emit_region_size</string>
+            <string>emit_region_width</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>40</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>emit_region_height</string>
           </argument>
           <argument>
             <kind>0</kind>
@@ -724,16 +748,19 @@
           <argument>
             <kind>1</kind>
             <string>var part_direction = 360 - direction;
-var region_size = self.emit_region_size / 2;
+var region_width = self.emit_region_width / 2;
+var region_height = self.emit_region_height / 2;
 
+// Wrap around
 if(self.x &gt; room_width) self.x = 0;
 if(self.x &lt; 0) self.x = room_width;
 if(self.y &gt; room_height) self.y = 0;
 if(self.y &lt; 0) self.y = room_height;
 
+//Invoke the emitter
 part_type_direction(self.sparkly_particle, part_direction, part_direction, 0, 0);
 
-part_emitter_region(self.particle_system, self.particle_emitter, x - region_size, x + region_size, y - region_size, y + region_size, self.emit_shape, self.emit_distribution);
+part_emitter_region(self.particle_system, self.particle_emitter, x - region_width, x + region_width, y - region_height, y + region_height, self.emit_shape, self.emit_distribution);
 
 if(self.stream)
     part_emitter_stream(self.particle_system, self.particle_emitter, self.sparkly_particle, self.emit_per_step);
@@ -798,6 +825,49 @@ else
           <argument>
             <kind>1</kind>
             <string>part_type_orientation(self.sparkly_particle, self.orientation_min, self.orientation_max, self.orientation_increment, self.orientation_wiggle, self.orientation_relative);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="17">
+      <action>
+        <libid>1</libid>
+        <id>605</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>Particle Lifetime</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>part_type_life(self.sparkly_particle, self.lifespan_min, self.lifespan_max);
 </string>
           </argument>
         </arguments>
@@ -884,6 +954,49 @@ else
           <argument>
             <kind>1</kind>
             <string>part_type_speed(self.sparkly_particle, self.speed_min, self.speed_max, self.speed_increment, self.speed_wiggle);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="14">
+      <action>
+        <libid>1</libid>
+        <id>605</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>Particle Alpha</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>part_type_alpha2(self.sparkly_particle, self.alpha_beginning, self.alpha_end);
 </string>
           </argument>
         </arguments>
@@ -1086,10 +1199,10 @@ event_perform(ev_other, ev_user0); // Particle Shape
 event_perform(ev_other, ev_user1); // Particle Scale
 event_perform(ev_other, ev_user2); // Particle Size
 event_perform(ev_other, ev_user3); // Particle Color
-part_type_alpha2(self.sparkly_particle, self.alpha_beginning, self.alpha_end);
+event_perform(ev_other, ev_user4); // Particle Alpha Decay
 event_perform(ev_other, ev_user5); // Particle Speed
 event_perform(ev_other, ev_user6); // Particle Gravity
-part_type_life(self.sparkly_particle, self.lifespan_min, self.lifespan_max);
+event_perform(ev_other, ev_user7); // Particle Lifetime
 part_type_blend(self.sparkly_particle, self.blend_effect);
 event_perform(ev_other, ev_user9); // Particle Orientation
 </string>

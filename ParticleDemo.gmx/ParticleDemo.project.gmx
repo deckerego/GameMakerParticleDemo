@@ -24,12 +24,28 @@
       <object>objects\slider_base</object>
       <object>objects\slider_part_shape</object>
       <object>objects\slider_grav_direction</object>
+      <object>objects\slider_grav_strength</object>
       <object>objects\slider_part_scale</object>
       <object>objects\slider_size_wiggle</object>
+      <object>objects\slider_size_min</object>
+      <object>objects\slider_size_max</object>
+      <object>objects\slider_size_increment</object>
       <object>objects\slider_speed_wiggle</object>
+      <object>objects\slider_speed_min</object>
+      <object>objects\slider_speed_max</object>
+      <object>objects\slider_speed_increment</object>
       <object>objects\slider_orientation_wiggle</object>
+      <object>objects\slider_orientation_min</object>
+      <object>objects\slider_orientation_max</object>
+      <object>objects\slider_orientation_increment</object>
+      <object>objects\slider_alpha_begin</object>
+      <object>objects\slider_alpha_end</object>
       <object>objects\slider_color_one</object>
       <object>objects\slider_color_two</object>
+      <object>objects\slider_lifespan_min</object>
+      <object>objects\slider_lifespan_max</object>
+      <object>objects\slider_region_width</object>
+      <object>objects\slider_region_height</object>
       <object>objects\color_sel</object>
     </objects>
     <objects name="weather">
