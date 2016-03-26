@@ -52,10 +52,12 @@
   </views>
   <instances>
     <instance objName="origin" x="343" y="246" name="inst_580E03BD" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="snow" x="320" y="160" name="inst_B96BEA47" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="slider_grav_direction" x="64" y="32" name="inst_5A1D30AF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="slider_part_shape" x="64" y="76" name="inst_24BC0035" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="slider_part_scale" x="63" y="116" name="inst_1C229E53" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="slider_part_shape" x="64" y="75" name="inst_24BC0035" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="slider_part_scale" x="64" y="116" name="inst_1C229E53" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="slider_size_wiggle" x="64" y="158" name="inst_2AE38A31" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="slider_speed_wiggle" x="64" y="197" name="inst_29650FC6" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="slider_orientation_wiggle" x="64" y="238" name="inst_D2FE8AEF" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

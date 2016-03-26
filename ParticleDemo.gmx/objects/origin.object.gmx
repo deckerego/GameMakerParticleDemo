@@ -760,6 +760,49 @@ else
         <isnot>0</isnot>
       </action>
     </event>
+    <event eventtype="7" enumb="19">
+      <action>
+        <libid>1</libid>
+        <id>605</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>Particle Orientation</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>part_type_orientation(self.sparkly_particle, self.orientation_min, self.orientation_max, self.orientation_increment, self.orientation_wiggle, self.orientation_relative);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
     <event eventtype="7" enumb="16">
       <action>
         <libid>1</libid>
@@ -803,7 +846,50 @@ else
         </arguments>
       </action>
     </event>
-    <event eventtype="7" enumb="11">
+    <event eventtype="7" enumb="15">
+      <action>
+        <libid>1</libid>
+        <id>605</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>Particle Speed</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>part_type_speed(self.sparkly_particle, self.speed_min, self.speed_max, self.speed_increment, self.speed_wiggle);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="12">
       <action>
         <libid>1</libid>
         <id>605</id>
@@ -821,6 +907,49 @@ else
           <argument>
             <kind>1</kind>
             <string>Particle Size</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>part_type_size(self.sparkly_particle, self.size_min, self.size_max, self.size_increment, self.size_wiggle);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="7" enumb="11">
+      <action>
+        <libid>1</libid>
+        <id>605</id>
+        <kind>0</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>0</useapplyto>
+        <exetype>0</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>Particle Scale</string>
           </argument>
         </arguments>
       </action>
@@ -911,15 +1040,15 @@ self.particle_emitter = part_emitter_create(self.particle_system);
 
 self.sparkly_particle = part_type_create();
 event_perform(ev_other, ev_user0); // Particle Shape
-event_perform(ev_other, ev_user1); // Particle Size
-part_type_size(self.sparkly_particle, self.size_min, self.size_max, self.size_increment, self.size_wiggle);
+event_perform(ev_other, ev_user1); // Particle Scale
+event_perform(ev_other, ev_user2); // Particle Size
 part_type_color2(self.sparkly_particle, self.color_one, self.color_two);
 part_type_alpha2(self.sparkly_particle, self.alpha_beginning, self.alpha_end);
-part_type_speed(self.sparkly_particle, self.speed_min, self.speed_max, self.speed_increment, self.speed_wiggle);
+event_perform(ev_other, ev_user5); // Particle Speed
 event_perform(ev_other, ev_user6); // Particle Gravity
 part_type_life(self.sparkly_particle, self.lifespan_min, self.lifespan_max);
 part_type_blend(self.sparkly_particle, self.blend_effect);
-part_type_orientation(self.sparkly_particle, self.orientation_min, self.orientation_max, self.orientation_increment, self.orientation_wiggle, self.orientation_relative);
+event_perform(ev_other, ev_user9); // Particle Orientation
 </string>
           </argument>
         </arguments>
@@ -942,7 +1071,7 @@ part_type_orientation(self.sparkly_particle, self.orientation_min, self.orientat
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>5</string>
+            <string>2</string>
           </argument>
         </arguments>
       </action>
@@ -964,7 +1093,7 @@ part_type_orientation(self.sparkly_particle, self.orientation_min, self.orientat
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>5</string>
+            <string>2</string>
           </argument>
         </arguments>
       </action>
@@ -986,7 +1115,7 @@ part_type_orientation(self.sparkly_particle, self.orientation_min, self.orientat
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>-5</string>
+            <string>-2</string>
           </argument>
         </arguments>
       </action>
@@ -1008,7 +1137,7 @@ part_type_orientation(self.sparkly_particle, self.orientation_min, self.orientat
         <arguments>
           <argument>
             <kind>0</kind>
-            <string>-5</string>
+            <string>-2</string>
           </argument>
         </arguments>
       </action>
