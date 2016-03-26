@@ -30,6 +30,9 @@
       <object>objects\slider_size_max</object>
       <object>objects\slider_size_increment</object>
       <object>objects\slider_speed_wiggle</object>
+      <object>objects\slider_speed_min</object>
+      <object>objects\slider_speed_max</object>
+      <object>objects\slider_speed_increment</object>
       <object>objects\slider_orientation_wiggle</object>
       <object>objects\slider_color_one</object>
       <object>objects\slider_color_two</object>
