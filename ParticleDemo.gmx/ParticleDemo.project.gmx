@@ -19,9 +19,15 @@
   </fonts>
   <objects name="objects">
     <object>objects\origin</object>
-    <object>objects\snow</object>
-    <object>objects\slider_grav_direction</object>
-    <object>objects\slider_part_shape</object>
+    <objects name="sliders">
+      <object>objects\slider_base</object>
+      <object>objects\slider_part_shape</object>
+      <object>objects\slider_grav_direction</object>
+      <object>objects\slider_part_scale</object>
+    </objects>
+    <objects name="weather">
+      <object>objects\snow</object>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\showcase</room>

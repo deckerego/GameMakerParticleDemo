@@ -5,7 +5,7 @@
   <visible>-1</visible>
   <depth>0</depth>
   <persistent>0</persistent>
-  <parentName>&lt;undefined&gt;</parentName>
+  <parentName>slider_base</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
@@ -50,6 +50,30 @@
           <argument>
             <kind>1</kind>
             <string>min_value</string>
+          </argument>
+          <argument>
+            <kind>0</kind>
+            <string>0</string>
+          </argument>
+        </arguments>
+      </action>
+      <action>
+        <libid>1</libid>
+        <id>611</id>
+        <kind>6</kind>
+        <userelative>-1</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>curr_value</string>
           </argument>
           <argument>
             <kind>0</kind>
@@ -130,32 +154,6 @@
         </arguments>
       </action>
     </event>
-    <event eventtype="6" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>if(mouse_x &gt; self.start_x) &amp;&amp; (mouse_x &lt; (self.start_x + 100)) {
-    self.x = mouse_x;
-    event_perform(ev_other, ev_user0);
-}
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
     <event eventtype="7" enumb="10">
       <action>
         <libid>1</libid>
@@ -193,11 +191,8 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>var range = self.max_value - self.min_value;
-var percentage = (self.x - self.start_x) / 100;
-with(origin) {
-    var test = floor(range * percentage);
-    switch(floor(range * percentage)) {
+            <string>with(origin) {
+    switch(floor(other.curr_value)) {
         case 0: self.part_shape = pt_shape_circle; break;
         case 1: self.part_shape = pt_shape_cloud; break;
         case 2: self.part_shape = pt_shape_disk; break;
@@ -213,35 +208,9 @@ with(origin) {
         case 12: self.part_shape = pt_shape_square; break;
         case 13: self.part_shape = pt_shape_star; break;
     }
-    
+
     event_perform(ev_other, ev_user0);
 }
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="7" enumb="4">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>self.start_x = self.x - 50;
-self.start_y = self.y;
-
-self.x = self.start_x;
 </string>
           </argument>
         </arguments>

@@ -29,7 +29,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>360</string>
+            <string>5</string>
           </argument>
         </arguments>
       </action>
@@ -77,7 +77,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>origin.grav_direction</string>
+            <string>origin.scale</string>
           </argument>
         </arguments>
       </action>
@@ -149,7 +149,7 @@
           </argument>
           <argument>
             <kind>0</kind>
-            <string>"Particle Gravity"</string>
+            <string>"Particle Scale"</string>
           </argument>
         </arguments>
       </action>
@@ -192,8 +192,8 @@
           <argument>
             <kind>1</kind>
             <string>with(origin) {
-    self.grav_direction = other.curr_value;
-    event_perform(ev_other, ev_user6);
+    self.scale = other.curr_value;
+    event_perform(ev_other, ev_user1);
 }
 </string>
           </argument>
